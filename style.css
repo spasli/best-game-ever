@@ -1,0 +1,244 @@
+body{
+	padding: 0;
+	margin:0;
+}
+main{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+.menu{
+	transition: 0.2s;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: red;
+	padding-top: 300px;
+}
+.menu_but{
+	transition: 0.2s;
+	text-align: center;
+	width: 50%;
+	height: 200px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	background-color: orange;
+}
+.menu_but > div {
+	transition: 0.2s;
+	margin-top: 25px;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	border: 1px solid black;
+	background-color: yellow;
+}
+.enemys{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: red;
+	padding-top: 300px;
+}
+.hero{
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	width: 30%;
+	height: 50px;
+	margin-bottom: 10px;
+}
+.hero_hp:before {
+	position: absolute;
+	top: 7px;
+	display:block;
+	content: '';
+	background-image: url('plus.png');
+	background-size: cover;
+	width: 25px;
+	height: 25px;
+}
+.hero_dmg:before{
+	position: absolute;
+	top: 7px;
+	display:block;
+	content: '';
+	background-image: url('sword.png');
+	background-size: cover;
+	width: 25px;
+	height: 25px;
+}
+.hero > div{
+	position: relative;
+	height: 25px;
+	background-color: orange;
+	width: 40%;
+	border: 1px solid black;
+	padding:10px;
+	text-align: center;
+	font-size: 100%;
+}
+.enemys_but{
+	padding: 10px;
+	text-align: center;
+	width: 80%;
+	height: 200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid black;
+	background-color: orange;
+}
+.options{
+	position: absolute;
+	bottom:0px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.rat , .human , .dragon{
+	position: relative;
+}
+.rat_hp , .human_hp , .dragon_hp , .rat_dmg , .human_dmg , .dragon_dmg{
+	position: relative;
+}
+.rat_hp:before , .human_hp:before , .dragon_hp:before {
+	position: absolute;
+	top: 0px;
+	display:block;
+	content: '';
+	background-image: url('plus.png');
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+}
+.rat_dmg:before , .human_dmg:before , .dragon_dmg:before{
+	position: absolute;
+	top: 0px;
+	display:block;
+	content: '';
+	background-image: url('sword.png');
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+}
+.options > div{
+	height: 20px;
+	background-color: orange;
+	width: 50%;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 100%;
+}
+.enemys_but > div{
+	width: 20%;
+	height: 100%;
+	background-color: orange;
+	border: 1px solid black
+}
+.back{
+	width: 20%;
+	height: 10px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid black;
+	background-color: orange
+
+}
+.hp{
+	position: relative;
+	text-align: center;
+	padding-top: 10px;
+	margin: auto;
+	border: 1px solid black;
+	background-color: orange;
+	margin-bottom: 20px;
+	width: 20%;
+	height: 30px;
+}
+.hp:before{
+	position: absolute;
+	top: 5px;
+	left: 3px;
+	display:block;
+	content: '';
+	background-image: url('plus.png');
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+.healing{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: red;
+	padding-top: 300px;
+}
+.healing_but{
+	padding: 10px;
+	text-align: center;
+	width: 30%;
+	padding: 30px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid black;
+	background-color: orange;
+}
+.healing_but > div{
+	padding: 30px;
+	width: 20%;
+	height: 100%;
+	background-color: orange;
+	border: 1px solid black
+}
+.exit_m{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: red;
+	padding-top: 300px;
+}
+.exit_but{
+	padding: 10px;
+	text-align: center;
+	width: 30%;
+	padding: 30px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid black;
+	background-color: orange;
+}
+.exit_but > div{
+	padding: 30px;
+	width: 20%;
+	height: 100%;
+	background-color: orange;
+	border: 1px solid black
+}
+.out_screan{
+	display: none;
+	background-color: black;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+}
+.death{
+	display: none;
+	padding-top: 25%;
+	text-align: center;
+	font-size: 130px;
+	color: red;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
