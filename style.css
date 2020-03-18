@@ -6,42 +6,53 @@ main{
 	position: relative;
 	width: 100%;
 	height: 100vh;
+	font-style: oblique
+
 }
 .menu{
 	transition: 0.2s;
 	position: absolute;
 	width: 100%;
-	height: 100vh;
-	background: red;
-	padding-top: 300px;
+	height: 100%;
+	background-image: url('img/dung.jpg');
+	background-size: cover;
+	padding-top: 15%;
 }
 .menu_but{
 	transition: 0.2s;
 	text-align: center;
 	width: 50%;
-	height: 200px;
+	height: 400px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	border: 1px solid black;
-	background-color: orange;
 }
-.menu_but > div {
+.menu_but > div , .healing_but > div {
+	position: relative;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	cursor: pointer;
 	transition: 0.2s;
 	margin-top: 25px;
 	margin: auto;
 	width: 50%;
-	padding: 10px;
-	border: 1px solid black;
-	background-color: yellow;
+	padding: 15px;
+	border-radius: 5px;
+	border: 3px solid #3c3526;
+	background-image:linear-gradient(to right ,  #070704 , #20595a , #070704 ) ;
+}
+.menu_but > div:hover , .back:hover{
+	color:#1f84b8;
 }
 .enemys{
 	display: none;
 	position: absolute;
 	width: 100%;
 	height: 100vh;
-	background: red;
-	padding-top: 300px;
+	background-image:url('img/mainBack.jpg');
+	background-size: cover;
+	padding-top: 25%;
 }
 .hero{
 	display: flex;
@@ -51,12 +62,18 @@ main{
 	height: 50px;
 	margin-bottom: 10px;
 }
+.hero > div {
+	background-image: url('img/back.jpg');
+	background-size: cover;
+	font-weight: bold;
+	color: white;
+}
 .hero_hp:before {
 	position: absolute;
 	top: 7px;
 	display:block;
 	content: '';
-	background-image: url('plus.png');
+	background-image: url('img/plus.png');
 	background-size: cover;
 	width: 25px;
 	height: 25px;
@@ -66,7 +83,7 @@ main{
 	top: 7px;
 	display:block;
 	content: '';
-	background-image: url('sword.png');
+	background-image: url('img/sword.png');
 	background-size: cover;
 	width: 25px;
 	height: 25px;
@@ -89,8 +106,6 @@ main{
 	margin: auto;
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid black;
-	background-color: orange;
 }
 .options{
 	position: absolute;
@@ -99,8 +114,44 @@ main{
 	display: flex;
 	justify-content: space-around;
 }
+.options > div{
+	background-image: url('img/back.jpg');
+	background-size: cover;
+}
 .rat , .human , .dragon{
 	position: relative;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.rat:before , .human:before , .dragon:before  {
+	display: block;
+	content: '';
+	background-image: url('img/skull.png');
+	background-size: cover;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: -20px;
+    left: -22px;
+}
+.rat:after , .human:after , .dragon:after  {
+	display: block;
+	content: '';
+	background-image: url('img/skull.png');
+	background-size: cover;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: -20px;
+    right: -22px;
+}
+.rat:hover:before ,  .human:hover:before , .dragon:hover:before , .rat:hover:after ,  .human:hover:after , .dragon:hover:after{
+	background-image: url('img/skull2.png');
+}
+.rat_icon , .human_icon , .dragon_icon{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
 }
 .rat_hp , .human_hp , .dragon_hp , .rat_dmg , .human_dmg , .dragon_dmg{
 	position: relative;
@@ -110,7 +161,7 @@ main{
 	top: 0px;
 	display:block;
 	content: '';
-	background-image: url('plus.png');
+	background-image: url('img/plus.png');
 	background-size: cover;
 	width: 20px;
 	height: 20px;
@@ -120,14 +171,15 @@ main{
 	top: 0px;
 	display:block;
 	content: '';
-	background-image: url('sword.png');
+	background-image: url('img/sword.png');
 	background-size: cover;
 	width: 20px;
 	height: 20px;
 }
 .options > div{
+	color: white;
+	font-weight: bold;
 	height: 20px;
-	background-color: orange;
 	width: 50%;
 	border: 1px solid black;
 	text-align: center;
@@ -137,29 +189,38 @@ main{
 	width: 20%;
 	height: 100%;
 	background-color: orange;
-	border: 1px solid black
+	border: 3px solid black
 }
 .back{
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	cursor: pointer;
 	width: 20%;
-	height: 10px;
+	height: 30px;
 	margin: auto;
 	margin-top: 20px;
 	padding: 15px;
 	text-align: center;
-	border: 1px solid black;
-	background-color: orange
-
+	padding: 15px;
+	border-radius: 5px;
+	border: 3px solid #3c3526;
+	background:linear-gradient(to right ,  #070704 , #20595a , #070704 ) ;
 }
 .hp{
+	font-weight: bold;
+	color: white;
 	position: relative;
 	text-align: center;
 	padding-top: 10px;
 	margin: auto;
 	border: 1px solid black;
-	background-color: orange;
+	background-image: url(img/back.jpg);
+	background-size: cover;
 	margin-bottom: 20px;
 	width: 20%;
 	height: 30px;
+
 }
 .hp:before{
 	position: absolute;
@@ -167,7 +228,7 @@ main{
 	left: 3px;
 	display:block;
 	content: '';
-	background-image: url('plus.png');
+	background-image: url('img/plus.png');
 	background-size: cover;
 	width: 30px;
 	height: 30px;
@@ -177,52 +238,60 @@ main{
 	position: absolute;
 	width: 100%;
 	height: 100vh;
-	background: red;
-	padding-top: 300px;
+	background-image: url('img/healBack.jpg');
+	background-size: cover;
+	padding-top: 25%;
 }
 .healing_but{
 	padding: 10px;
 	text-align: center;
-	width: 30%;
+	width: 50%;
 	padding: 30px;
 	margin: auto;
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid black;
-	background-color: orange;
+	
 }
 .healing_but > div{
+	border-radius: 5px;
+	border: 3px solid #3c3526;
 	padding: 30px;
 	width: 20%;
 	height: 100%;
-	background-color: orange;
-	border: 1px solid black
+}
+.healing_but > div:hover {
+	color: #1f84b8;
 }
 .exit_m{
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: 100vh;
-	background: red;
-	padding-top: 300px;
+	height:100%;
+	background-image:url('img/unnamed.jpg');
+	background-size: cover;
+	padding-top: 25%;
 }
 .exit_but{
 	padding: 10px;
 	text-align: center;
-	width: 30%;
+	width: 50%;
 	padding: 30px;
 	margin: auto;
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid black;
-	background-color: orange;
+	
 }
 .exit_but > div{
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	cursor: pointer;
 	padding: 30px;
 	width: 20%;
 	height: 100%;
-	background-color: orange;
-	border: 1px solid black
+	border-radius: 5px;
+	border: 3px solid #3c3526;
+	background:linear-gradient(to right ,  #070704 , #20595a , #070704 ) ;
 }
 .out_screan{
 	display: none;

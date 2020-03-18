@@ -67,6 +67,37 @@ menuBut.onclick=function(){
 	menuMen.style.display='block';
 	enemysMen.style.display='none';
 }
+
+ratBut.onmouseover=function(){
+	enemysMen.style.backgroundImage="url(img/ratBack.jpg)";
+	enemysMen.style.backgroundSize='cover'
+
+}
+ratBut.onmouseout=function(){
+	enemysMen.style.backgroundImage="url(img/mainBack.jpg)";
+	enemysMen.style.backgroundSize='cover'
+}
+
+humanBut.onmouseover=function(){
+	enemysMen.style.backgroundImage="url(img/humanBack.jpg)";
+	enemysMen.style.backgroundSize='cover'
+
+}
+humanBut.onmouseout=function(){
+	enemysMen.style.backgroundImage="url(img/mainBack.jpg)";
+	enemysMen.style.backgroundSize='cover'
+}
+
+dragonBut.onmouseover=function(){
+	enemysMen.style.backgroundImage="url(img/dragonBack.jpg)";
+	enemysMen.style.backgroundSize='cover'
+
+}
+dragonBut.onmouseout=function(){
+	enemysMen.style.backgroundImage="url(img/mainBack.jpg)";
+	enemysMen.style.backgroundSize='cover'
+}
+
 ratBut.onclick=function(){
 	if ( heroHP > 0 ) {
 		heroHP -= ratDMG;
